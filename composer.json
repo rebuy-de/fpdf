@@ -1,10 +1,6 @@
 {
     "name": "rebuy/fpdf",
     "autoload": {
-        "psr-0": {
-            "fpdf" : "src/"
-        } 
+        "classmap": ["src/"]
     }
 }
-
-
