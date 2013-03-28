@@ -19,7 +19,7 @@ class PDFConcat extends fpdi
 	public function addDocument($document)
 	{
 		// PDF muss erst gepsiehcret werden damit es zusammengefügt werden kann.
-        $filename = sprintf('%s/tmp/concat_%s.pdf', BASE_PATH, md5(uniqid()));
+        $filename = sprintf('%s/shared/concat_%s.pdf', BASE_PATH, md5(uniqid()));
 
         $fp = fopen($filename, 'w');
         fwrite($fp, $document);
